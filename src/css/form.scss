@@ -1,0 +1,210 @@
+.help-form {
+   border: 1px solid #D1D1D1;
+   padding: 40px 30px;
+   border-radius: 24px;
+   background-color: #fff;
+   position: relative;
+
+   &__img1 {
+      position: absolute;
+      bottom: calc(100% + 1px);
+      right: 0;
+   }
+
+   
+   &__img2 {
+      position: absolute;
+      top: 100%;
+      left: 0;
+   }
+
+   &__img2 {
+
+   }
+
+   @include sm {
+      padding: 30px 20px;
+      border-radius: 10px;
+   }
+
+   &__title {
+      font-family: var(--nunito);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+
+      @include sm {
+         font-size: 18px;
+      }
+   }
+
+   &__formgoup {
+      position: relative;
+      margin-bottom: 20px;
+
+      @include sm {
+         margin-bottom: 15px;
+      }
+
+      input {
+         font-size: 16px;
+         line-height: 1.5;
+         border: 1px solid #DDDFE0;
+         border-radius: 8px;
+         background-color: #F5F5F5;
+         padding: 12px 15px;
+         width: 100%;
+
+         @include sm {
+            font-size: 14px;
+         }
+      }
+   }
+
+   &__action {
+      display: flex;
+      gap: 20px;
+
+      @include xl {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__policy {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #5C636B;
+      font-weight: 400;
+      flex: 1 1 auto;
+
+      a {
+         color: #5C636B;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+
+   .btn  {
+      @include sm {
+         width: 100%;
+      }
+   }
+}
+
+.form-callback {
+   font-family: var(--nunito);
+   &__formgroup {
+      margin-bottom: 20px;
+
+      @include sm {
+         margin-bottom: 15px;
+      }
+
+      input {
+         font-size: 18px;
+         font-weight: 500;
+         width: 100%;
+         color: #292930;
+         padding: 17px;
+         border-radius: 8px;
+         border: none;
+         outline: none;
+
+         @include sm {
+            font-size: 14px;
+            padding: 10px 15px;
+         }
+
+         &::placeholder {
+            color: #667085;
+         }
+      }
+   }
+
+   &__label {
+      font-size: 18px;
+      line-height: 1.2;
+      color: #292930;
+      font-weight: 500;
+      margin-bottom: 6px;
+
+      @include sm {
+         font-size: 14px;
+      }
+   }
+
+   &__send {
+      width: 100%;
+   }
+}
+
+.form-checkbox {
+   display: block;
+   position: relative;
+   margin-bottom: 20px;
+
+   @include sm {
+      margin-bottom: 15px;
+   }
+
+   input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked + .form-checkbox__text {
+         &:after {
+            opacity: 1;
+         }
+      }
+   }
+
+   &__text {
+      font-size: 14px;
+      color: #292930;
+      line-height: 1.25;
+      font-weight: 400;
+      display: block;
+      position: relative;
+      padding: 0 0 0 30px;
+      cursor: pointer;
+      font-family: var(--nunito);
+      
+      a {
+         text-decoration: underline;
+         color: #2489FF;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+
+      &:before,
+      &:after {
+         content: '';
+         position: absolute;
+         width: 20px;
+         height: 20px;
+         top: 0;
+         left: 0;
+      }
+
+      &:before {
+         border-radius: 0px;
+         border: 1px solid #292930;
+         border-radius: 4px;
+      }
+
+      &:after {
+         content: '';
+         background-image: url('../img/check.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 10px;
+         opacity: 0;
+      }
+   }
+}

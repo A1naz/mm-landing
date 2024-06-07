@@ -1,0 +1,467 @@
+.tarrifs-head {
+   padding: 6px 6px 30px;
+   border-radius: 10px;
+   background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
+   position: sticky;
+   top: 0;
+   left: 0;
+   box-shadow: 3px 6px 15px 2px #AEAEAE8C;
+   z-index: 10;
+
+   @include md {
+      margin-left: -15px;
+      margin-right: -15px;
+      border-radius: 0;
+      padding-bottom: 10px;
+   }
+
+}
+
+.tarrifs-company {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px 32px;
+   margin-bottom: 10px;
+
+   @include md {
+      display: none;
+   }
+
+   &__btn {
+      width: 120px;
+      border: 7px solid transparent;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+
+      &:not(.disabled) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      &.active {
+         border-color: #fff;
+      }
+
+      &.disabled {
+         &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/dev.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+      }
+
+      img {
+         width: 100%;
+      }
+   }
+}
+
+.tarrifs {
+   &__change {
+      display: flex;
+      gap: 10px 24px;
+      margin-bottom: 20px;
+
+      @include md {
+         gap: 10px;
+      }
+   }
+
+   &__pay {
+      @include md {
+         overflow-x: scroll;   
+      }
+   }
+
+   &__btn {
+      font-family: var(--nunito);
+      padding: 9px 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #292930;
+      background-color: #fff;
+      flex: 1 1 auto;
+      text-align: center;
+      border-radius: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px 5px;
+      cursor: pointer;
+
+      @include md {
+         font-size: 16px;
+         font-weight: 600;
+      }
+
+      &.active {
+         background-color: #292930;
+         color: #fff;
+      }
+
+      &.hidden {
+         display: none;
+      }
+
+      .rossrochka {
+         font-size: 16px;
+         color: #292930;
+         font-weight: 500;
+         padding: 2px 5px;
+         background-color: #FFDC60;
+         border-radius: 7px;
+      }
+   }
+}
+
+.packet {
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 60px;
+   padding-top: 20px;
+
+   @include md {
+      padding-right: 0;
+      gap: 20px;
+      padding-top: 10px;
+   }
+
+   &__item {
+      padding: 0 7px;
+
+      @include md {
+         display: none;
+         width: calc(50% - 10px);
+         padding: 0;
+
+         &.show {
+            display: block;
+         }
+      }
+   }
+
+   &__name {
+      font-size: 14px;
+      font-weight: 500;
+      color: #292930;
+      margin-bottom: 10px;
+
+      .popular {
+         padding: 2px 10px 2px 4px;
+         color: #fff;
+         background-color: #292930;
+         border-radius: 7px;
+         margin-left: 10px;
+
+         @include md {
+            display: none;
+         }
+      }
+
+      .recomend {
+         padding: 2px 4px 2px 4px;
+         background-color: #2EFFB9;
+         border-radius: 7px;
+         margin-left: 10px;
+
+         @include md {
+            display: none;
+         }
+      }
+   }
+
+   &__price {
+      font-size: 20px;
+      color: #292930;
+      font-weight: 500;
+      margin-bottom: 8px;
+
+      @include md {
+         font-size: 18px;
+      }
+   }
+
+   &__btn {
+      padding: 13px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #292930;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+      
+      @include md {
+         padding: 11px 10px;
+      }
+
+      &.disabled {
+         cursor: default;
+         pointer-events: none;
+         background-color: #999999;
+      }
+   }
+}
+
+.packet-mobile {
+   flex-wrap: wrap;
+   gap: 10px 20px;
+   display: none;
+
+   @include md {
+      display: flex;
+   }
+
+   &__title {
+      font-family: var(--nunito);
+      font-size: 14px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      width: 100%;
+   }
+
+   &__item {
+      width: calc(50% - 10px);
+   }
+
+   select {
+      width: 100%;
+   }
+}
+
+.d-name {
+   width: 25%;
+
+   @include md {
+      width: 100%;
+   }
+}
+
+.d-col {
+   width: 18.75%;
+   flex-shrink: 0;
+
+   @include md {
+      width: calc(50% - 10px);
+   }
+}
+
+.table {
+   padding-top: 30px;
+
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #DDDFE0;
+      font-family: var(--nunito);
+      font-size: 13px;
+      color: #292930;
+
+      &:nth-child(odd) {
+         background-color: #F6F7F8;
+
+         @include md {
+            background-color: transparent;
+            
+         }
+      }
+
+      @include md {
+         gap: 0 20px;
+         padding: 6px 0;
+      }
+   }
+
+   &__item {
+      padding-right: 60px;
+
+      @include md {
+         padding-right: 0;
+      }
+   }
+
+   &__title {
+      font-family: var(--nunito);
+      font-size: 16px;
+      font-weight: 800;
+      padding: 12px 60px 12px 0;
+      position: relative;
+      cursor: pointer;
+
+      @include md {
+         order: 1;
+      }
+
+      &.hide {
+         &:after {
+            transform: rotate(0deg);
+         }
+      }
+
+      &::before {
+         content: '';
+         display: block;
+         width: calc(100% + 60px);
+         height: 1px;
+         background-color: #dddfe0;
+         position: absolute;
+         top: -1px;
+         left: 0;
+
+         @include md {
+            display: none;
+         }
+      }
+
+      &:after {
+         content: '';
+         display: block;
+         background-image: url('../img/table-icon.svg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         width: 16px;
+         height: 16px;
+         position: absolute;
+         top: 50%;
+         right: -60px;
+         margin-top: -8px;
+         transform: rotate(180deg);
+         transition: 0.5s;
+
+         @include md {
+            right: 0;
+         }
+      }
+   }
+
+   &__name {
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+
+      @include md {
+         padding: 0px 0px;
+         margin-bottom: 12px;
+      }
+   }
+
+   &__col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid #DDDFE0;
+      padding: 10px 0;
+
+      @include md {
+         border-left: none;
+         justify-content: flex-start;
+         display: none;
+         padding: 0px 0;
+
+         &.show {
+            display: flex;
+         }
+      }
+   }
+}
+
+.tarif-select {
+   float: none;
+   font-family: var(--nunito);
+
+   .list {
+      width: 100%;
+   }
+
+   .current {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #292930;
+   }
+
+   .option {
+      font-size: 14px;
+      color: #292930;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+         border-bottom: 1px solid #F0F0F0;
+      }
+   }
+}
+
+.company-select {
+   float: none;
+   margin-bottom: 20px;
+   font-family: var(--nunito);
+   display: none;
+
+   @include md {
+      display: block;
+   }
+
+   .list {
+      width: 100%;
+   }
+
+   .current {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #292930;
+   }
+
+   .option {
+      font-size: 14px;
+      color: #292930;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         border-bottom: 1px solid #F0F0F0;
+      }
+      &.disabled {
+         position: relative;
+         padding-right: 90px;
+
+         &::before {
+            content: 'В разработке';
+            position: absolute;
+            right: 0;
+            top: 0px;
+            font-size: 10px;
+            color: #FFA004;
+            padding: 0 10px;
+         }
+      }
+   }
+}
+
+
+///////////////
+
+.new-price {
+   &__item {
+      padding: 25px 0;
+   }
+
+   select {
+      font-size: 20px;
+   }
+
+   label {
+      font-size: 20px;
+   }
+}
