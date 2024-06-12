@@ -613,7 +613,7 @@ img {
 .header-nav a::after {
   width: 50%;
   left: 0;
-  background-color: #ffdc60;
+  /* background-color: #ffdc60; */
 }
 
 .header-nav a.active:before,
