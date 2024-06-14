@@ -10,8 +10,27 @@
 
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/notification.css" />
+    <link rel="stylesheet" href="assets/css/error-notification.css" />
   </head>
   <body>
+    <div class="notification">
+      <button class="close-btn" onclick="closeNotification()">&times;</button>
+      <img class="notification_img" src="assets/img/notification/success.png" />
+      <h3 style="font-size: 8px">&nbsp;</h3>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Письмо отправлено</p>
+      <h3 style="font-size: 8px">&nbsp;</h3>
+    </div>
+    <div class="error-notification">
+      <button class="close-btn" onclick="closeNotification()">&times;</button>
+      <img class="notification_img" src="assets/img/notification/error.png" />
+      <h3 style="font-size: 8px">&nbsp;</h3>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Подтвердите политику</p>
+      <h3 style="font-size: 8px">&nbsp;</h3>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -1767,7 +1786,12 @@
             <form class="form-callback">
               <div class="form-callback__formgroup">
                 <div class="form-callback__label">Ваше имя</div>
-                <input type="text" placeholder="Введите наше имя" name="name" />
+                <input
+                  type="text"
+                  placeholder="Введите наше имя"
+                  name="name"
+                  id="nameInput"
+                />
               </div>
               <div class="form-callback__formgroup">
                 <div class="form-callback__label">Номер телефона</div>
@@ -1775,6 +1799,7 @@
                   type="tel"
                   placeholder="Введите ваш номер телефона"
                   name="tel"
+                  id="phoneInput"
                 />
               </div>
               <div class="form-callback__formgroup">
@@ -1783,6 +1808,7 @@
                   type="text"
                   placeholder="Введите ваш Email"
                   name="email"
+                  id="emailInput"
                 />
               </div>
               <!-- <div class="form-callback__formgroup">
@@ -1794,7 +1820,7 @@
                 />
               </div> -->
               <label class="form-checkbox">
-                <input type="checkbox" class="form-checkbox__input" />
+                <input type="checkbox" class="form-checkbox__input" id="agree-policy-checkbox"/>
                 <span class="form-checkbox__text"
                   >Ознакомлен(-на) с
                   <a href="#"
@@ -1805,7 +1831,7 @@
               </label>
 
               <label class="form-checkbox">
-                <input type="checkbox" class="form-checkbox__input" />
+                <input type="checkbox" class="form-checkbox__input" id="agree-subscribe-checkbox" />
                 <span class="form-checkbox__text"
                   >Я соглашаюсь
                   <a href="#"
@@ -1814,7 +1840,10 @@
                   >
                 </span>
               </label>
-              <button class="form-callback__send btn btn--black">
+              <button
+                class="form-callback__send btn btn--black"
+                id="consultBtn"
+              >
                 Оставить заявку
               </button>
             </form>
@@ -1905,7 +1934,9 @@
               <a href="tel:88001014240">8 (800) 101 42-40</a>
             </div>
             <div class="footer__email">
-              <a href="mailto:support@marketmonstr.pro">support@marketmonstr.pro</a>
+              <a href="mailto:support@marketmonstr.pro"
+                >support@marketmonstr.pro</a
+              >
             </div>
 
             <div class="footer__soc">
@@ -1957,5 +1988,6 @@
     <script src="assets/js/price.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/download.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>

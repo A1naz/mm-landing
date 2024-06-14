@@ -1,0 +1,48 @@
+.error-notification {
+    z-index: 200;
+    position: fixed;
+    top: -100px;
+    right: 40px;
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #de8328;
+    border: 2px solid rgb(199, 135, 124);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    font-size: 20px;
+    color: #1c2127;
+  }
+  
+  .error-notification.active {
+    top: 20px;
+    opacity: 1;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    color: #1c2127;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .error-notification_img {
+    position: absolute;
+    top: 12px;
+    border: none;
+    width: 35px;
+    height: 35px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .error-notification {
+      width: 80%;
+      right: 5px;
+    }
+  }
