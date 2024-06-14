@@ -6,6 +6,7 @@ document.getElementById("loginBtn").addEventListener("click", function (event) {
 
   console.log(referralCode);
   if (referralCode) {
+    localStorage.removeItem("referralCode");
     targetUrl = `https://app.marketmonstr.pro/register?ref=${referralCode}`;
   }
 
