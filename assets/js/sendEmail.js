@@ -31,7 +31,7 @@ function showErrorNotification() {
 
 const sendEmail = async (name, phone, email) => {
   try {
-    const response = await fetch("http://localhost:8080/api/email/send", {
+    const response = await fetch("https://app.marketmonstr.pro/api/email/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
