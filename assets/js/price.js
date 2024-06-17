@@ -7,22 +7,22 @@ $(document).ready(function () {
             btns: [
               {
                 name: "demo",
-                price: 7500,
+                price: 0,
                 isActive: true,
               },
               {
                 name: "start",
-                price: 40000,
+                price: 0,
                 isActive: false,
               },
               {
                 name: "pro",
-                price: 80000,
+                price: 0,
                 isActive: false,
               },
               {
                 name: "vip",
-                price: 160000,
+                price: 0,
                 isActive: false,
               },
             ],
@@ -3413,17 +3413,17 @@ $(document).ready(function () {
               },
               {
                 name: "start",
-                price: 40000,
+                price: 0,
                 isActive: false,
               },
               {
                 name: "pro",
-                price: 92000,
+                price: 0,
                 isActive: false,
               },
               {
                 name: "vip",
-                price: 184000,
+                price: 0,
                 isActive: false,
               },
             ],
@@ -3590,7 +3590,7 @@ $(document).ready(function () {
               },
               {
                 name: "start",
-                price: 460000,
+                price: 46000,
                 isActive: true,
               },
               {
