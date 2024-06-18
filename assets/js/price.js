@@ -7,7 +7,7 @@ $(document).ready(function () {
             btns: [
               {
                 name: "demo",
-                price: 0,
+                price: 7500,
                 isActive: true,
               },
               {
@@ -3408,7 +3408,7 @@ $(document).ready(function () {
             btns: [
               {
                 name: "demo",
-                price: 0,
+                price: 7500,
                 isActive: true,
               },
               {
