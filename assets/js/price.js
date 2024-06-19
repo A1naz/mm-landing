@@ -1796,17 +1796,17 @@ $(document).ready(function () {
               },
               {
                 name: "start",
-                price: 155000,
+                price: 175000,
                 isActive: true,
               },
               {
                 name: "pro",
-                price: 460000,
+                price: 520000,
                 isActive: true,
               },
               {
                 name: "vip",
-                price: 920000,
+                price: 1035000,
                 isActive: true,
               },
             ],
@@ -1975,17 +1975,17 @@ $(document).ready(function () {
               },
               {
                 name: "start",
-                price: 460000,
+                price: 490000,
                 isActive: true,
               },
               {
                 name: "pro",
-                price: 920000,
+                price: 980000,
                 isActive: true,
               },
               {
                 name: "vip",
-                price: 1840000,
+                price: 1960000,
                 isActive: true,
               },
             ],
@@ -2164,7 +2164,7 @@ $(document).ready(function () {
               },
               {
                 name: "vip",
-                price: 3100000,
+                price: 3070000,
                 isActive: true,
               },
             ],
