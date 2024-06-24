@@ -34,38 +34,38 @@ function showErrorNotification() {
 }
 
 const sendEmail = async (name, phone, email) => {
-  // try {
-  //   const response = await fetch(
-  //     "https://app.marketmonstr.pro/api/bitrix/addLead",
-  //     {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json;charset=utf-8",
-  //       },
-  //       mode: "no-cors",
-  //       body: JSON.stringify({
-  //         fields: {
-  //           TITLE: "Заявка с лендинга marketmonstr.pro",
-  //           NAME: name,
-  //           EMAIL: [
-  //             {
-  //               VALUE: email,
-  //               VALUE_TYPE: "WORK",
-  //             },
-  //           ],
-  //           PHONE: [
-  //             {
-  //               VALUE: phone,
-  //               VALUE_TYPE: "WORK",
-  //             },
-  //           ],
-  //         },
-  //       }),
-  //     }
-  //   );
-  // } catch (error) {
-  //   console.error(error);
-  // }
+  try {
+    const response = await fetch(
+      "https://app.marketmonstr.pro/api/bitrix/addLead",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          fields: {
+            TITLE: "Заявка с лендинга marketmonstr.pro",
+            NAME: name,
+            EMAIL: [
+              {
+                VALUE: email,
+                VALUE_TYPE: "WORK",
+              },
+            ],
+            PHONE: [
+              {
+                VALUE: phone,
+                VALUE_TYPE: "WORK",
+              },
+            ],
+          },
+        }),
+      }
+    );
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 consultBtn.addEventListener("click", async function (event) {
