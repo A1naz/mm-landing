@@ -15,24 +15,49 @@
     <link rel="stylesheet" href="assets/css/error-notification.css" />
   </head>
   <body>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-  ym(97608506, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97608506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
+      ym(97608506, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/97608506"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -1382,6 +1407,10 @@
           *Логистические услуги оплачиваются дополнительно, обратитесь к
           персональному менеджеру за консультацией
         </div>
+        <div class="services__note">
+          *Сумма на покупку товара переводится на расчетный счет организации
+          (+7%)
+        </div>
       </div>
     </section>
 
@@ -1633,7 +1662,11 @@
                 </button>
                 <div class="help-form__policy">
                   Оставляя заявку, вы соглашаетесь на
-                  <a href="#">обработку персональных данных</a>
+                  <a
+                    href="https://app.marketmonstr.pro/conf_policy.pdf"
+                    target="_blank"
+                    >обработку персональных данных</a
+                  >
                 </div>
               </div>
             </form>
@@ -1878,10 +1911,17 @@
                 />
                 <span class="form-checkbox__text"
                   >Ознакомлен(-на) с
-                  <a href="#"
+                  <a
+                    href="https://app.marketmonstr.pro/conf_policy.pdf"
+                    target="_blank"
                     >Политикой в отношении обработки персональных данных</a
                   >
-                  и даю <a href="#">Согласие на их обработку</a>
+                  и даю
+                  <a
+                    href="https://app.marketmonstr.pro/conf_policy.pdf"
+                    target="_blank"
+                    >Согласие на их обработку</a
+                  >
                 </span>
               </label>
 
@@ -1959,8 +1999,20 @@
               <img src="assets/img/footer-logo.svg" alt="logo" />
             </a>
             <ul class="footer__links footer__desc">
-              <li><a href="#">Политика конфиденциальности</a></li>
-              <li><a href="#">Пользовательское соглашение</a></li>
+              <li>
+                <a
+                  href="https://app.marketmonstr.pro/conf_policy.pdf"
+                  target="_blank"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://app.marketmonstr.pro/oferta.pdf"
+                  target="_blank"
+                  >Пользовательское соглашение</a
+                >
+              </li>
               <li>
                 <a href="#cookie-popup" class="btn-popup"
                   >Политика обработки файлов cookies</a
