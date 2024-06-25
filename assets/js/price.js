@@ -8,21 +8,25 @@ $(document).ready(function () {
               {
                 name: "demo",
                 price: 7500,
+                discountPrice: 7500,
                 isActive: true,
               },
               {
                 name: "start",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
               {
                 name: "pro",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
               {
                 name: "vip",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
             ],
@@ -186,20 +190,24 @@ $(document).ready(function () {
                 name: "demo",
                 price: 0,
                 isActive: false,
+                discountPrice: 0,
               },
               {
                 name: "start",
                 price: 40000,
+                discountPrice: 26000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 80000,
+                discountPrice: 52000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 160000,
+                discountPrice: 104000,
                 isActive: true,
               },
             ],
@@ -367,16 +375,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 80000,
+                discountPrice: 49700,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 155000,
+                discountPrice: 99500,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 310000,
+                discountPrice: 199000,
                 isActive: true,
               },
             ],
@@ -544,16 +555,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 140000,
+                discountPrice: 92500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 280000,
+                discountPrice: 185000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 555000,
+                discountPrice: 370000,
                 isActive: true,
               },
             ],
@@ -723,16 +737,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 55000,
+                discountPrice: 29000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 105000,
+                discountPrice: 58000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 210000,
+                discountPrice: 115000,
                 isActive: true,
               },
             ],
@@ -902,16 +919,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 100000,
+                discountPrice: 54500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 200000,
+                discountPrice: 109000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 400000,
+                discountPrice: 218000,
                 isActive: true,
               },
             ],
@@ -1076,21 +1096,25 @@ $(document).ready(function () {
               {
                 name: "demo",
                 price: 0,
+                
                 isActive: false,
               },
               {
                 name: "start",
                 price: 185000,
+                discountPrice: 104000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 370000,
+                discountPrice: 208000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 740000,
+                discountPrice: 416000,
                 isActive: true,
               },
             ],
@@ -1264,16 +1288,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 135000,
+                discountPrice: 86500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 405000,
+                discountPrice: 259000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 805000,
+                discountPrice: 518000,
                 isActive: true,
               },
             ],
@@ -1441,16 +1468,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 385000,
+                discountPrice: 247500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 770000,
+                discountPrice: 495000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1550000,
+                discountPrice: 990000,
                 isActive: true,
               },
             ],
@@ -1618,16 +1648,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 690000,
+                discountPrice: 460000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1380000,
+                discountPrice: 920000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2300000,
+                discountPrice: 1533000,
                 isActive: true,
               },
             ],
@@ -1797,16 +1830,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 175000,
+                discountPrice: 96000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 520000,
+                discountPrice: 287500,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1035000,
+                discountPrice: 577500,
                 isActive: true,
               },
             ],
@@ -1975,17 +2011,20 @@ $(document).ready(function () {
               },
               {
                 name: "start",
-                price: 490000,
+                price: 460000,
+                discountPrice: 270000, 
                 isActive: true,
               },
               {
                 name: "pro",
-                price: 980000,
+                price: 920000,
+                discountPrice: 540000,
                 isActive: true,
               },
               {
                 name: "vip",
-                price: 1960000,
+                price: 1840000,
+                discountPrice: 1080000,
                 isActive: true,
               },
             ],
@@ -2155,16 +2194,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 920000,
+                discountPrice: 517000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1840000,
+                discountPrice: 1035000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 3070000,
+                discountPrice: 1724000,
                 isActive: true,
               },
             ],
@@ -2338,16 +2380,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 405000,
+                discountPrice: 259000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 805000,
+                discountPrice: 518000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1610000,
+                discountPrice: 1035000,
                 isActive: true,
               },
             ],
@@ -2515,16 +2560,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 770000,
+                discountPrice: 494000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1540000,
+                discountPrice: 988000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2600000,
+                discountPrice: 1660000,
                 isActive: true,
               },
             ],
@@ -2692,16 +2740,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 1380000,
+                discountPrice: 920000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 2340000,
+                discountPrice: 1600000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 3525000,
+                discountPrice: 2350000,
                 isActive: true,
               },
             ],
@@ -2871,16 +2922,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 520000,
+                discountPrice: 287500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1035000,
+                discountPrice: 575000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2070000,
+                discountPrice: 1150000,
                 isActive: true,
               },
             ],
@@ -3050,16 +3104,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 977000,
+                discountPrice: 540000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1960000,
+                discountPrice: 1080000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 3280000,
+                discountPrice: 1815000,
                 isActive: true,
               },
             ],
@@ -3229,16 +3286,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 1840000,
+                discountPrice: 1035000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 3120000,
+                discountPrice: 1755000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 4700000,
+                discountPrice: 2644000,
                 isActive: true,
               },
             ],
@@ -3414,16 +3474,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
               {
                 name: "pro",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
               {
                 name: "vip",
                 price: 0,
+                discountPrice: 0,
                 isActive: false,
               },
             ],
@@ -3591,16 +3654,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 46000,
+                discountPrice: 29500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 92000,
+                discountPrice: 59000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 184000,
+                discountPrice: 117000,
                 isActive: true,
               },
             ],
@@ -3768,16 +3834,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 90000,
+                discountPrice: 56000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 175000,
+                discountPrice: 112000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 350000,
+                discountPrice: 225000,
                 isActive: true,
               },
             ],
@@ -3945,16 +4014,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 160000,
+                discountPrice: 104000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 315000,
+                discountPrice: 209000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 627000,
+                discountPrice: 418000,
                 isActive: true,
               },
             ],
@@ -4124,16 +4196,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 60000,
+                discountPrice: 33000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 120000,
+                discountPrice: 65000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 240000,
+                discountPrice: 130000,
                 isActive: true,
               },
             ],
@@ -4303,16 +4378,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 112000,
+                discountPrice: 61500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 222000,
+                discountPrice: 123000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 444000,
+                discountPrice: 245500,
                 isActive: true,
               },
             ],
@@ -4482,16 +4560,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 210000,
+                discountPrice: 118000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 420000,
+                discountPrice: 235000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 840000,
+                discountPrice: 470000,
                 isActive: true,
               },
             ],
@@ -4665,16 +4746,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 155000,
+                discountPrice: 97500,
                 isActive: true,
               },
               {
                 name: "pro",
+                discountPrice: 295500,
                 price: 455000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 910000,
+                discountPrice: 585000,
                 isActive: true,
               },
             ],
@@ -4842,16 +4926,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 444000,
+                discountPrice: 280000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 871000,
+                discountPrice: 559000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1742000,
+                discountPrice: 1118000,
                 isActive: true,
               },
             ],
@@ -5019,16 +5106,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 787000,
+                discountPrice: 520000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1560000,
+                discountPrice: 1040000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2600000,
+                discountPrice: 1733000,
                 isActive: true,
               },
             ],
@@ -5198,16 +5288,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 195000,
+                discountPrice: 108500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 585000,
+                discountPrice: 325000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1170000,
+                discountPrice: 650000,
                 isActive: true,
               },
             ],
@@ -5377,16 +5470,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 555000,
+                discountPrice: 306000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1105000,
+                discountPrice: 611000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2210000,
+                discountPrice: 1222000,
                 isActive: true,
               },
             ],
@@ -5556,16 +5652,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 1040000,
+                discountPrice: 585000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 2080000,
+                discountPrice: 1170000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 4465000,
+                discountPrice: 1950000,
                 isActive: true,
               },
             ],
@@ -5739,16 +5838,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 455000,
+                discountPrice: 292500,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 910000,
+                discountPrice: 585000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 1820000,
+                discountPrice: 1170000,
                 isActive: true,
               },
             ],
@@ -5916,16 +6018,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 871000,
+                discountPrice: 559000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1741000,
+                discountPrice: 1117000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2921000,
+                discountPrice: 1875000,
                 isActive: true,
               },
             ],
@@ -6093,16 +6198,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 1560000,
+                discountPrice: 1040000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 2640000,
+                discountPrice: 1760000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 3975000,
+                discountPrice: 2650000,
                 isActive: true,
               },
             ],
@@ -6272,16 +6380,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 585000,
+                discountPrice: 325000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 1174000,
+                discountPrice: 650000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 2440000,
+                discountPrice: 1300000,
                 isActive: true,
               },
             ],
@@ -6451,16 +6562,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 1105000,
+                discountPrice: 611000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 2210000,
+                discountPrice: 1211000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 3706000,
+                discountPrice: 2050000,
                 isActive: true,
               },
             ],
@@ -6630,16 +6744,19 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 2080000,
+                discountPrice: 1170000,
                 isActive: true,
               },
               {
                 name: "pro",
                 price: 3540000,
+                discountPrice: 1980000,
                 isActive: true,
               },
               {
                 name: "vip",
                 price: 5300000,
+                discountPrice: 2981000,
                 isActive: true,
               },
             ],
@@ -6843,6 +6960,7 @@ $(document).ready(function () {
     var dataOneMounth = price[checked[0]][checked[1]][checked[2]].month1;
 
     if (dataOneMounth) {
+      console.log('sadsad');
       btnOneMounth.removeClass("hidden");
     } else {
       btnOneMounth.addClass("hidden");
@@ -6928,24 +7046,32 @@ $(document).ready(function () {
     var btn_pro_price = $(`[data-packet-name="pro"] .packet__price`);
     var btn_vip_price = $(`[data-packet-name="vip"] .packet__price`);
 
+    var btn_start_discount_price = $(`[data-packet-name="start"] .discount__packet__price`);
+    var btn_pro_discount_price = $(`[data-packet-name="pro"] .discount__packet__price`);
+    var btn_vip_discount_price = $(`[data-packet-name="vip"] .discount__packet__price`);
+
     var btns = data["btns"];
     btns[0].isActive
-      ? btn_demo.removeClass("disabled")
-      : btn_demo.addClass("disabled");
+      ? (btn_demo.removeClass("disabled"))
+      : (btn_demo.addClass("disabled"));
     btns[1].isActive
-      ? btn_start.removeClass("disabled")
-      : btn_start.addClass("disabled");
+      ? (btn_start.removeClass("disabled"), btn_start_discount_price.removeClass("disabled"))
+      : (btn_start.addClass("disabled"), btn_start_discount_price.addClass("disabled"))
     btns[2].isActive
-      ? btn_pro.removeClass("disabled")
-      : btn_pro.addClass("disabled");
+      ? (btn_pro.removeClass("disabled"), btn_pro_discount_price.removeClass("disabled"))
+      : (btn_pro.addClass("disabled"), btn_pro_discount_price.addClass("disabled"))
     btns[3].isActive
-      ? btn_vip.removeClass("disabled")
-      : btn_vip.addClass("disabled");
+      ? (btn_vip.removeClass("disabled"), btn_vip_discount_price.removeClass("disabled"))
+      : (btn_vip.addClass("disabled"), btn_vip_discount_price.addClass("disabled"))
 
     btn_demo_price.text(btns[0].price.toLocaleString("ru") + " ₽");
-    btn_start_price.text(btns[1].price.toLocaleString("ru") + " ₽");
-    btn_pro_price.text(btns[2].price.toLocaleString("ru") + " ₽");
-    btn_vip_price.text(btns[3].price.toLocaleString("ru") + " ₽");
+    btn_start_price.text(btns[1].discountPrice.toLocaleString("ru") + " ₽");
+    btn_pro_price.text(btns[2].discountPrice.toLocaleString("ru") + " ₽");
+    btn_vip_price.text(btns[3].discountPrice.toLocaleString("ru") + " ₽");
+    
+    btn_start_discount_price.text(btns[1].price.toLocaleString("ru") + " ₽");
+    btn_pro_discount_price.text(btns[2].price.toLocaleString("ru") + " ₽");
+    btn_vip_discount_price.text(btns[3].price.toLocaleString("ru") + " ₽");
 
     collaps_item();
   }

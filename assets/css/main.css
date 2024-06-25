@@ -1479,6 +1479,15 @@ img {
   margin-bottom: 8px;
 }
 
+.discount__packet__price {
+  font-size: 15px;
+  color: #868695;
+  text-decoration: line-through;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-left: 7px;
+}
+
 .packet__btn {
   padding: 13px 10px;
   font-size: 14px;
@@ -3455,6 +3464,9 @@ img {
   }
 
   .packet__price {
+    font-size: 18px;
+  }
+  .discount__packet__price {
     font-size: 18px;
   }
 
