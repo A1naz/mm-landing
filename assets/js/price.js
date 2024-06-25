@@ -1096,7 +1096,7 @@ $(document).ready(function () {
               {
                 name: "demo",
                 price: 0,
-                
+
                 isActive: false,
               },
               {
@@ -2012,7 +2012,7 @@ $(document).ready(function () {
               {
                 name: "start",
                 price: 460000,
-                discountPrice: 270000, 
+                discountPrice: 270000,
                 isActive: true,
               },
               {
@@ -6960,7 +6960,7 @@ $(document).ready(function () {
     var dataOneMounth = price[checked[0]][checked[1]][checked[2]].month1;
 
     if (dataOneMounth) {
-      console.log('sadsad');
+      console.log("sadsad");
       btnOneMounth.removeClass("hidden");
     } else {
       btnOneMounth.addClass("hidden");
@@ -7046,29 +7046,41 @@ $(document).ready(function () {
     var btn_pro_price = $(`[data-packet-name="pro"] .packet__price`);
     var btn_vip_price = $(`[data-packet-name="vip"] .packet__price`);
 
-    var btn_start_discount_price = $(`[data-packet-name="start"] .discount__packet__price`);
-    var btn_pro_discount_price = $(`[data-packet-name="pro"] .discount__packet__price`);
-    var btn_vip_discount_price = $(`[data-packet-name="vip"] .discount__packet__price`);
+    var btn_start_discount_price = $(
+      `[data-packet-name="start"] .discount__packet__price`
+    );
+    var btn_pro_discount_price = $(
+      `[data-packet-name="pro"] .discount__packet__price`
+    );
+    var btn_vip_discount_price = $(
+      `[data-packet-name="vip"] .discount__packet__price`
+    );
 
     var btns = data["btns"];
     btns[0].isActive
-      ? (btn_demo.removeClass("disabled"))
-      : (btn_demo.addClass("disabled"));
+      ? btn_demo.removeClass("disabled")
+      : btn_demo.addClass("disabled");
     btns[1].isActive
-      ? (btn_start.removeClass("disabled"), btn_start_discount_price.removeClass("disabled"))
-      : (btn_start.addClass("disabled"), btn_start_discount_price.addClass("disabled"))
+      ? (btn_start.removeClass("disabled"),
+        btn_start_discount_price.removeClass("disabled"))
+      : (btn_start.addClass("disabled"),
+        btn_start_discount_price.addClass("disabled"));
     btns[2].isActive
-      ? (btn_pro.removeClass("disabled"), btn_pro_discount_price.removeClass("disabled"))
-      : (btn_pro.addClass("disabled"), btn_pro_discount_price.addClass("disabled"))
+      ? (btn_pro.removeClass("disabled"),
+        btn_pro_discount_price.removeClass("disabled"))
+      : (btn_pro.addClass("disabled"),
+        btn_pro_discount_price.addClass("disabled"));
     btns[3].isActive
-      ? (btn_vip.removeClass("disabled"), btn_vip_discount_price.removeClass("disabled"))
-      : (btn_vip.addClass("disabled"), btn_vip_discount_price.addClass("disabled"))
+      ? (btn_vip.removeClass("disabled"),
+        btn_vip_discount_price.removeClass("disabled"))
+      : (btn_vip.addClass("disabled"),
+        btn_vip_discount_price.addClass("disabled"));
 
     btn_demo_price.text(btns[0].price.toLocaleString("ru") + " ₽");
     btn_start_price.text(btns[1].discountPrice.toLocaleString("ru") + " ₽");
     btn_pro_price.text(btns[2].discountPrice.toLocaleString("ru") + " ₽");
     btn_vip_price.text(btns[3].discountPrice.toLocaleString("ru") + " ₽");
-    
+
     btn_start_discount_price.text(btns[1].price.toLocaleString("ru") + " ₽");
     btn_pro_discount_price.text(btns[2].price.toLocaleString("ru") + " ₽");
     btn_vip_discount_price.text(btns[3].price.toLocaleString("ru") + " ₽");
