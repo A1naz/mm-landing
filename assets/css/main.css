@@ -243,6 +243,7 @@ img {
   overflow: auto;   
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.3);
+  
 }
 
 .modal-header {
@@ -263,8 +264,15 @@ img {
 
 .modal-body-text {
   font-weight: 200;
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  font-style: var(--nunito);
+}
+.modal-body-text-2 {
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 20px;
   text-align: center;
   font-style: var(--nunito);
 }
@@ -308,6 +316,7 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-modal {
@@ -3522,7 +3531,7 @@ img {
   }
 
   .modal-body-text {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 17px;
     text-align: center;
   }
