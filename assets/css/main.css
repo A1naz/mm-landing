@@ -4420,9 +4420,12 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .xs430-btn-100 {
     width: 100%;
+  }
+  .sm-btn-50{
+    font-size: 12px;
   }
 
   .mobile-menu {
