@@ -212,24 +212,16 @@ $(document).ready(function () {
    var subcribeBtn = document.getElementsByClassName("subscribe-btn")[0];
    var span = document.getElementsByClassName("close")[0];
    
-   // Show modal with transition
    function showModal() {
        modal.classList.add("show");
    }
    
-   // Hide modal with transition
    function hideModal() {
        modal.classList.remove("show");
        setTimeout(function() {
            modal.style.display = "none";
        }, 300); 
    }
-   
-
-   // if (localStorage.getItem('subscribed') !== 'true') {
-   //     modal.style.display = "block";
-   //     setTimeout(showModal, 10);
-   // }
    
    subcribeBtn.onclick = function() {
        hideModal();
