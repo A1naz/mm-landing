@@ -207,34 +207,47 @@ $(document).ready(function () {
    });
 
   
-  // Остальной ваш код для открытия и закрытия модального окна остается без изменений
-  var modal = document.getElementById("myModal");
-//   var btn = document.getElementById("myBtn");
-  var subcribeBtn = document.getElementsByClassName("subscribe-btn")[0];
-  var span = document.getElementsByClassName("close")[0];
+   var modal = document.getElementById("myModal");
+   var btn = document.getElementById("myBtn");
+   var subcribeBtn = document.getElementsByClassName("subscribe-btn")[0];
+   var span = document.getElementsByClassName("close")[0];
+   
+   // Show modal with transition
+   function showModal() {
+       modal.classList.add("show");
+   }
+   
+   // Hide modal with transition
+   function hideModal() {
+       modal.classList.remove("show");
+       setTimeout(function() {
+           modal.style.display = "none";
+       }, 300); 
+   }
+   
 
-  if(localStorage.getItem('subscribed') === 'true') {
-      modal.style.display = "none";
-  }else{
-      modal.style.display = "block";
-  }
-  
-  subcribeBtn.onclick = function() {
-      modal.style.display = "none";
-      localStorage.setItem('subscribed', 'true');
-  };
-  
-//   btn.onclick = function() {
-//       modal.style.display = "block";
-//   };
-  
-  span.onclick = function() {
-      modal.style.display = "none";
-  };
-  
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  };
+   // if (localStorage.getItem('subscribed') !== 'true') {
+   //     modal.style.display = "block";
+   //     setTimeout(showModal, 10);
+   // }
+   
+   subcribeBtn.onclick = function() {
+       hideModal();
+       localStorage.setItem('subscribed', 'true');
+   };
+   
+   btn.onclick = function() {
+       modal.style.display = "block";
+       setTimeout(showModal, 10);
+   };
+   
+   span.onclick = function() {
+       hideModal();
+   };
+   
+   window.onclick = function(event) {
+       if (event.target == modal) {
+           hideModal();
+       }
+   };
 });
