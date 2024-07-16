@@ -1,12 +1,12 @@
 const consultBtn = document.getElementById("consultBtn");
-const nameInput = document.getElementById("nameInput");
+// const nameInput = document.getElementById("nameInput");
 const phoneInput = document.getElementById("phoneInput");
 const emailInput = document.getElementById("emailInput");
 const agreePolicy = document.getElementById("agree-policy-checkbox");
 const agreeSubscribe = document.getElementById("agree-subscribe-checkbox");
 
 const consultBtnForm = document.getElementById("consultBtnForm");
-const nameInputForm = document.getElementById("nameInputForm");
+// const nameInputForm = document.getElementById("nameInputForm");
 const phoneInputForm = document.getElementById("phoneInputForm");
 
 function closeNotification() {
@@ -70,7 +70,7 @@ const sendEmail = async (name, phone, email) => {
 
 consultBtn.addEventListener("click", async function (event) {
   event.preventDefault();
-  const name = nameInput.value;
+  // const name = nameInput.value;
   const phone = phoneInput.value;
   const email = emailInput.value;
 
@@ -79,19 +79,19 @@ consultBtn.addEventListener("click", async function (event) {
     return;
   }
 
-  if (!name || (!phone && !email)) return;
+  if (!phone && !email) return;
 
-  await sendEmail(name, phone, email);
+  await sendEmail('Имя', phone, email);
   showNotification();
 });
 
 consultBtnForm.addEventListener("click", async function (event) {
   event.preventDefault();
-  const name = nameInputForm.value;
+  // const name = nameInputForm.value;
   const phone = phoneInputForm.value;
 
-  if (!name || !phone) return;
+  if (!phone) return;
 
-  await sendEmail(name, phone, "");
+  await sendEmail('Имя', phone, "");
   showNotification();
 });
