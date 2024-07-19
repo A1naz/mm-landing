@@ -207,6 +207,10 @@ $(document).ready(function () {
    });
 
   
+
+  
+
+
    var modal = document.getElementById("myModal");
    var btn = document.getElementById("myBtn");
    var subcribeBtn = document.getElementsByClassName("subscribe-btn")[0];
