@@ -196,9 +196,24 @@ $(document).ready(function () {
     },
   });
 
+  const isCookieClosed =  localStorage.getItem("isCookieClosed");
+  if (!isCookieClosed) {
+    $.magnificPopup.open({
+      items: {
+        src: "#cookie-popup",
+      },
+      mainClass: "my-mfp-zoom-in",
+      removalDelay: 300,
+    }, 0);
+  }
+
+
   $("#accept-cookie").on("click", function () {
+    localStorage.setItem("isCookieClosed", "true");
     $.magnificPopup.close();
   });
+
+
 
   $("#decline-cookie").on("click", function () {
     $('script[src="https://mc.yandex.ru/metrika/tag.js"]').remove();
